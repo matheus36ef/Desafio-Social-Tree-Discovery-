@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Variaveis de cores */
+:root {
+    --body-bg-color: hsl(270, 60%, 98%);
+    --purple: #BB99DD;
+    --purpleHover: #dad3e1;
+}
+
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*body --------------------------------------------------*/
+body {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 550px;
+    background: var(--body-bg-color);
+}
+/*header ------------------------------------------------*/
+/* Imagem de perfil ------------------------------------ */
+.perfil #imgMascara {
+    max-width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+    margin: 1rem;
+}
+.perfil #imgPerfil {
+    z-index: 2;
+}
+#mascaraLine {
+    position: absolute;
+    
+    z-index: 99;
+
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    
+    
+    border: 5px solid #4c385f;
+}
+small{
+    text-align: center;
+    
+    color: #BB99DD;
+}
+/*----------------------------------------------------------*/
+/*links ----------------------------------------------------*/
+#links {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+    grid-gap: 1rem;
+}
+#links a {
+    color: var(--purple);
+    opacity: .9;
+    font-size: 13px;
+    text-decoration: none;
+
+    padding: 0.2rem 5rem;
+    border: 2px  solid var(--purple);
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+#links a:hover {
+    opacity: 1;
+    color: var(--purpleHover);
+    background-color: var(--purple);
+    transition-duration: 0.5s;
+
+}
+/*----------------------------------------------------------*/
+/*icons ----------------------------------------------------*/
+#icons {
+    text-align: center;
+    
+    padding: 2rem;
+}
+#icons a {
+    padding: 0.3rem;
+}
+#icons a img {
+    max-width: 20px;
+}

@@ -1,0 +1,17 @@
+{
+  "name": "desafio-social-tree",
+  "version": "1.0.0",
+  "description": "DesafioRocketseatDiscovery",
+  "main": "index.js",
+  "repository": "git@github.com:matheus36ef/Desafio-Social-Tree-Discovery-.git",
+  "author": "Matheus E. Franzoni",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node": "^17.1.0"
+  },
+  "scripts": {
+    "dev": "node src/server.js"
+  },
+  "devDependencies": {}
+}
